@@ -1,4 +1,5 @@
 body{
+  color:#40514E;
   margin:0;
   text-align: center;
   font-family:'Merriweather',serif;
@@ -9,6 +10,7 @@ h1{
     font-family: 'Sacramento',cursive;
     font-size:5.625em;
     color: #66BFBF;
+    padding-bottom:10px;
 }
 
 h2{
@@ -23,13 +25,21 @@ h3{
 }
 
 hr{
-  border-style: none;
+  border:dotted green 6px;
+  border-bottom:none;
+  width:4%;
+  margin:100px auto;
+  /*border-style: none;
   border-top-style: dotted;
   color:black;
   border-width: 15px;
   width: 5%;
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 70px;*/
+}
+
+p{
+  line-height: 2;
 }
 
 .profile{
@@ -37,13 +47,13 @@ hr{
   padding-top: 25px;
 }
 
-.top{
+.top-container{   /*containers*/
   position:relative;
   padding-top:100px;
 }
 
 .middle-container{
-
+  margin:100px 0;     /* spacing between profile photo and the mountain */
 }
 
 .bottom-container{
@@ -53,8 +63,8 @@ hr{
   padding-bottom: 15px;
 }
 
-.footer-link{
-  padding:25px;
+.footer-link{   /*  You can also use anchor tags to refer to links*/
+  margin:10px 20px;
   color:#11999E;
   font-size: 1.4em;
   font-style: normal;
@@ -62,12 +72,19 @@ hr{
 }
 
 .footer-link:hover{
-  color:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
   color:#476e9e;
+  font-size: 1.6em;
+
 }
 
 .pro{
   text-decoration: underline;
+}
+
+.intro{
+  width:30%;
+  margin:auto;
+  line-height: 2;
 }
 
 .prog{
@@ -76,13 +93,13 @@ hr{
 
 .top-cloud{
   position: absolute;
-  right:550px;
+  right:300px;
   top:50px;
 }
 
 .bottom-cloud{
   position:absolute;
-  left:550px;
+  left:250px;
 }
 .mountain{
   position:relative;
@@ -112,23 +129,24 @@ hr{
 
 .copyright{
   color:#EAF6F6;
-  padding-top: 25px;
+  padding:20px 0px;
+  font-size: 0.75rem;
 }
 
 .btn {
   margin-top: 50px;
 	background:linear-gradient(to bottom, #66BFBF 5%, #66BFBF 100%);
 	background-color:#66BFBF;
-	border-radius:24px;
+	border-radius:8px;
 	border:1px solid #66BFBF;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Verdana;
+	font-family:'Montserrat', sans-serif;
 	font-size:28px;
 	padding:17px 53px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #283966;
+	text-shadow:0 1px 0 #283966;
 }
 .btn:hover {
 	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
@@ -137,6 +155,11 @@ hr{
 .btn:active {
 	position:relative;
 	top:1px;
+}
+
+.contact-message{
+  width:40%;
+  margin:40px auto 60px;
 }
 
 /*.code-skill-description{   is used to like ANTI-FLOAT, makes the side you choose to not wrap around
